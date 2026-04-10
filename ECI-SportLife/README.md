@@ -382,22 +382,27 @@ public class CorsConfig {
 ## Estructura del Proyecto (Scaffolding MVC)
 
 ```
-ECI-SportLife/
-src/main/java/com/dosw/sportlife/
-  SportLifeApplication.java
-  config/         SecurityConfig.java, JwtUtil.java, JwtFilter.java
-  controller/     AuthController.java, ProductController.java, CartController.java, OrderController.java
-  dto/
-    request/      RegisterRequest.java, LoginRequest.java, AddToCartRequest.java
-    response/     AuthResponse.java
-  exception/      GlobalExceptionHandler.java
-  model/          User.java, Product.java, Cart.java, CartItem.java, Order.java, OrderItem.java
-  repository/     UserRepository.java, ProductRepository.java, CartRepository.java, OrderRepository.java
-  service/impl/   AuthServiceImpl.java, ProductServiceImpl.java, CartServiceImpl.java,
-                  OrderServiceImpl.java, UserDetailsServiceImpl.java
-src/main/resources/application.properties
-.github/workflows/pipeline.yml
-pom.xml
+└───ECI-SportLife
+    ├───.github
+    │   └───workflows
+    └───src
+        └───main
+            ├───Evidencia
+            ├───java
+            │   └───com
+            │       └───dosw
+            │           └───sportlife
+            │               ├───config
+            │               ├───controller
+            │               ├───dto
+            │               │   ├───request
+            │               │   └───response
+            │               ├───exception
+            │               ├───model
+            │               ├───repository
+            │               └───service
+            │                   └───impl
+            └───resources
 ```
 
 ## Pipeline CI/CD (GitHub Actions)
